@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
@@ -43,9 +43,10 @@ interface DeliveryFormProps {
   isOpen: boolean;
   onOpenChange: (isOpen: boolean) => void;
   gift: ImagePlaceholder;
+  onClaimSuccess: () => void;
 }
 
-export default function DeliveryForm({ isOpen, onOpenChange, gift }: DeliveryFormProps) {
+export default function DeliveryForm({ isOpen, onOpenChange, gift, onClaimSuccess }: DeliveryFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -60,6 +61,12 @@ export default function DeliveryForm({ isOpen, onOpenChange, gift }: DeliveryFor
       gift: gift.description,
     },
   });
+
+  useEffect(() => {
+    if (isSuccess) {
+      onClaimSuccess();
+    }
+  }, [isSuccess, onClaimSuccess]);
 
   async function onSubmit(values: FormData) {
     setIsSubmitting(true);
