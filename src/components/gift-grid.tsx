@@ -22,11 +22,11 @@ export default function GiftGrid({ onGiftSelect }: GiftGridProps) {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
         {giftImages.map((gift) => (
           <Card
             key={gift.id}
-            className="overflow-hidden cursor-pointer group transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:shadow-primary/20"
+            className="overflow-hidden cursor-pointer group transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:shadow-primary/20"
             onClick={() => onGiftSelect(gift)}
           >
             <CardContent className="p-0">
@@ -34,15 +34,15 @@ export default function GiftGrid({ onGiftSelect }: GiftGridProps) {
                 <Image
                   src={gift.imageUrl}
                   alt={gift.description}
-                  width={400}
-                  height={400}
+                  width={250}
+                  height={250}
                   className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                   data-ai-hint={gift.imageHint}
                 />
               </div>
             </CardContent>
-            <CardFooter className="p-4 bg-background/80 backdrop-blur-sm">
-                <p className="font-semibold text-center w-full">{gift.description}</p>
+            <CardFooter className="p-3 bg-background/80 backdrop-blur-sm">
+                <p className="font-semibold text-sm text-center w-full truncate">{gift.description}</p>
             </CardFooter>
           </Card>
         ))}
