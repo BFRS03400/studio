@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "swiper-1",
+      "description": "Decorative lights for Diwali celebration",
+      "imageUrl": "https://picsum.photos/seed/diwali1/1200/500",
+      "imageHint": "diwali lights"
+    },
+    {
+      "id": "swiper-2",
+      "description": "Family celebrating Diwali with sparklers",
+      "imageUrl": "https://picsum.photos/seed/diwali2/1200/500",
+      "imageHint": "diwali celebration"
+    },
+    {
+      "id": "swiper-3",
+      "description": "An assortment of traditional Indian sweets",
+      "imageUrl": "https://picsum.photos/seed/diwali3/1200/500",
+      "imageHint": "indian sweets"
+    },
+    {
+      "id": "swiper-4",
+      "description": "Beautiful rangoli design on the floor",
+      "imageUrl": "https://picsum.photos/seed/diwali4/1200/500",
+      "imageHint": "diwali rangoli"
+    },
+    {
+      "id": "gift-1",
+      "description": "Gourmet Chocolate Box",
+      "imageUrl": "https://picsum.photos/seed/gift1/400/400",
+      "imageHint": "chocolate box"
+    },
+    {
+      "id": "gift-2",
+      "description": "Artisan Tea Collection",
+      "imageUrl": "https://picsum.photos/seed/gift2/400/400",
+      "imageHint": "tea collection"
+    },
+    {
+      "id": "gift-3",
+      "description": "Luxury Scented Candle",
+      "imageUrl": "https://picsum.photos/seed/gift3/400/400",
+      "imageHint": "scented candle"
+    },
+    {
+      "id": "gift-4",
+      "description": "Smart Reusable Notebook",
+      "imageUrl": "https://picsum.photos/seed/gift4/400/400",
+      "imageHint": "smart notebook"
+    },
+    {
+      "id": "gift-5",
+      "description": "Portable Bluetooth Speaker",
+      "imageUrl": "https://picsum.photos/seed/gift5/400/400",
+      "imageHint": "bluetooth speaker"
+    },
+    {
+      "id": "gift-6",
+      "description": "Gourmet Coffee Set",
+      "imageUrl": "https://picsum.photos/seed/gift6/400/400",
+      "imageHint": "coffee set"
+    },
+    {
+      "id": "gift-7",
+      "description": "Handcrafted Desk Organizer",
+      "imageUrl": "https://picsum.photos/seed/gift7/400/400",
+      "imageHint": "desk organizer"
+    },
+    {
+      "id": "gift-8",
+      "description": "Subscription Box Voucher",
+      "imageUrl": "https://picsum.photos/seed/gift8/400/400",
+      "imageHint": "gift voucher"
+    }
+  ]
 }
